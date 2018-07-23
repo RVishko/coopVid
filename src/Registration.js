@@ -21,6 +21,7 @@ const options = {
 export default class Registration extends React.Component {
     static navigationOptions = {
         title: 'Registration',
+        headerLeft: null,
     };
 
     componentDidMount() {
