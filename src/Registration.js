@@ -53,7 +53,6 @@ export default class Registration extends React.Component {
                 // var isAnonymous = user.isAnonymous;
                 // var uid = user.uid;
                 // var providerData = user.providerData;
-                console.log(user)
                 navigate('Home',{
                     email: user.email,
                     uid: user.uid,

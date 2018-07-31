@@ -32,3 +32,17 @@ handleListClick(i,e){
     {this.state.likeArray.map((item, index) => <Text key={index}>{`${index}, ${item}`}</Text>)}
     <Button title='Log out' onPress={this.logOut.bind(this)} />
 </View>
+
+{/*<TouchableWithoutFeedback*/}
+{/*onPress={()=>this.videoPress(item.Id)}*/}
+{/*>*/}
+{/*<Image style={{width:'90%',height:360, marginTop: 10 ,resizeMode:'contain'}} source={{uri: item.Img}}/>*/}
+{/*</TouchableWithoutFeedback>*/}
+
+
+<WebView
+    style={ styles.WebViewContainer }
+    javaScriptEnabled={true}
+    domStorageEnabled={true}
+    source={{uri: `https://www.youtube.com/embed/${this.state.currentVideoID}` }}
+/>

@@ -8,44 +8,6 @@ import ScrollableTabView, { DefaultTabBar } from "react-native-scrollable-tab-vi
 import {createStackNavigator} from "react-navigation";
 
 
-
-// export default class App extends React.Component {
-//     constructor() {
-//         super();
-//     }
-//
-//     componentDidMount() {
-//         // console.log(this.viewPager)
-//     }
-//
-//     setPageByApp() {
-//         console.log('this',this)
-//         console.log(this.viewPager)
-//     }
-//
-//   render() {
-//       //   pages = []
-//       // pages.push(
-//       //     <View style={styles.pageStyle} key="1">
-//       //         <Home/>
-//       //     </View>
-//       // )
-//       // pages.push(
-//       //     <View style={styles.pageStyle} key="2">
-//       //         <Login />
-//       //     </View>
-//       // )
-//       // pages.push(
-//       //      <View style={styles.pageStyle} key="3">
-//       //         <Registration
-//       //             setPageByApp={ this.setPageByApp }
-//       //         />
-//       //     </View>
-//       // )
-//
-//   }
-// }
-
 const App = createStackNavigator({
     Registration: { screen: Registration },
     Home: { screen: Home },
